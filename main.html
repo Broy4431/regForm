@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="heading">Registration Form</div>
+
+    <div class="form-details">
+        <form class="input-fields">
+
+            <label for="nameInput">Name <br>
+                <input type="text" placeholder="Enter your name" class="input" id="name">
+            </label><br>
+
+            <label for="dobInput">Date of Birth <br>
+                <input type="date" min="17" max="21" class="input" id="dob">
+            </label><br>
+
+            <label for="emailInput">Email ID <br>
+                <input type="email" class="input" id="email">
+            </label><br> 
+
+            <label for="regNoInput">Registration no. <br>
+                <input type="text" class="input" id="regNo">
+            </label><br>
+
+            <label for="genderInput">Gender <br>
+                <input type="radio" name="Male">
+                Male
+            </label> 
+
+            <label> <br>
+                <input type="radio" name="Female">
+                Female
+            </label> <br><br>
+
+            <label for="yearInput">Which year are you in currently?</label> <br>
+                <select name="yearInput" id="year"> 
+                    <option value="1st year">1st year</option> 
+                    <option value="2nd year">2nd year</option> 
+                    <option value="3rd year">3rd year</option> 
+                    <option value="4th year">4th year</option> 
+                </select> <br><br>
+
+            <label for="q1Input">Brief on your current technical knowledge: <br>
+                <textarea name="ans1" cols="35" rows="5" class="input" id="curKnowledge"></textarea>
+            </label><br>
+
+            <label for="q2Input">What do you aim to achieve? <br>
+                <textarea name="ans2" cols="35" rows="5" class="input" id="aim"></textarea>
+            </label><br>
+
+            <label for="q3Input">Describe your dream project in 50 words: <br>
+                <textarea name="ans3" cols="35" rows="5" class="input" id="dreamProject"></textarea>
+            </label> <br>
+
+            <label for="q4Input">How did you come to know about robovitics? <br>
+                <textarea name="ans4" cols="35" rows="5" class="input" id="knowRobovitics"></textarea>
+            </label> <br>
+
+            <label>
+                <input type="checkbox" name="checkbox" value="value"> I am ready to be a part of RoboVitics.
+            </label> <br><br>
+
+            <button type="submit" class="button" id="submitBtn">SUBMIT</button>
+
+        </form>
+    </div>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
